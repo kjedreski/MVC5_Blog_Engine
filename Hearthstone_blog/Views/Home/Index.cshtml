@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+Welcome to the Hearthstone blog . . . 
+<br />
+Please @Html.ActionLink("sign in","Login","Account") to comment or make blogs . .
+
+
+@if (!User.Identity.IsAuthenticated)
+{
+    // javascript alert?
+    <br />
+    <p>You're not signed in.. </p>
+}
+else{
+    <p> Welcome @ViewBag.Name </p>
+    // if user is not signed in,  thats fine, but they do not get comment access.
+    
+
+
+}
+
+
+
+
