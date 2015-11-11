@@ -11,13 +11,14 @@ namespace Hearthstone_blog.Models
     //Each post belongs to a single Category
     // Posts can be labeled with many tags
     // Post and Category the relationship is many-to-one
+
     // Post and Tag the relationship is many-to-many
 
 
     public class Post
     {
-        [Key]
-        public string Id { get; set; }
+      
+        public int PostId { get; set; }
 
         [Required]
         [StringLength(50, ErrorMessage ="The {} must be between {2} and {1} characters long", MinimumLength =5)]
@@ -30,7 +31,7 @@ namespace Hearthstone_blog.Models
         public string ShortDescription { get; set; }
 
         [Required]
-        [StringLength(5000, ErrorMessage ="The {0} must be between {2} and {1} characters long.", MinimumLength = 500)]
+        [StringLength(5000, ErrorMessage ="The {0} must be between {2} and {1} characters long.", MinimumLength = 50)]
         [Display(Name ="Description")]
         public string Description { get; set;}
 
@@ -49,49 +50,13 @@ namespace Hearthstone_blog.Models
         [DefaultValue(0)]
         public int NetLikeCount { get; set; }
 
-        public string Category { get; set; }
+ 
+        // many to one relationship with catgory
+        public virtual  Category Category { get; set; }
+        // many to many relationship with Tags
+        public virtual ICollection<Tag> Tags { get; set; }
     }
 
-    public class Category
-    {
-        [Key]
-        public string Id { get; set; }
-
-        [Required]
-        [Display(Name ="Name")]
-        public string Name { get; set; }
-
-        [Required]
-        [Display(Name="Urlslug")]
-        public string UrlSlug { get; set; }
-
-        public string Description { get; set; }
-    }
-
-    public class Tag
-    {
-        public string Id { get; set; }
-        [Key]
-        [Required]
-        [Display(Name="Name")]
-        public string Name { get; set; }
-
-        [Required]
-        [Display(Name = "Urlslug")]
-        public string UrlSlug { get; set; }
-
-        public string Description { get; set; }
-
-    }
-
-    public class PostTagMap
-    {
-        [Key]
-        public int Post_id { get; set; }
-        [Key]
-        public int Tag_id {get; set;}
-
-    }
 
 
 }

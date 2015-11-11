@@ -64,6 +64,7 @@ C:\Users\jetsk_000\Documents\Visual Studio 2015\Projects\Hearthstone_blog\Hearth
 C:\Users\jetsk_000\Documents\Visual Studio 2015\Projects\Hearthstone_blog\Hearthstone_blog\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\jetsk_000\Documents\Visual Studio 2015\Projects\Hearthstone_blog\Hearthstone_blog\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\jetsk_000\Documents\Visual Studio 2015\Projects\Hearthstone_blog\Hearthstone_blog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\jetsk_000\Documents\Visual Studio 2015\Projects\Hearthstone_blog\Hearthstone_blog\obj\Debug\Hearthstone_blog.csprojResolveAssemblyReference.cache
 C:\Users\jetsk_000\Documents\Visual Studio 2015\Projects\Hearthstone_blog\Hearthstone_blog\obj\Debug\Hearthstone_blog.dll
 C:\Users\jetsk_000\Documents\Visual Studio 2015\Projects\Hearthstone_blog\Hearthstone_blog\obj\Debug\Hearthstone_blog.pdb
+C:\Users\jetsk_000\documents\visual studio 2015\Projects\HearthStone_Blog\Hearthstone_blog\obj\Debug\Hearthstone_blog.Migrations.init.resources
+C:\Users\jetsk_000\documents\visual studio 2015\Projects\HearthStone_Blog\Hearthstone_blog\obj\Debug\Hearthstone_blog.csproj.GenerateResource.Cache
